@@ -1,6 +1,5 @@
 @import 'variables';
 @import 'globals';
-
 @import 'common/column/column';
 
 .work-area {
@@ -11,30 +10,39 @@
     gap: 40px;
 }
 
-.rectangle-creator{
-    background-color: red;
+.rectangle-creator {
     height: 60px;
     width: 120px;
     border: 1px black 2px;
 }
 
-.destinations-wrapper{
+.portable {
+    height: 60px;
+    width: 120px;
+    cursor: move;
+}
+
+.destinations-wrapper {
     display: flex;
     gap: 40px;
 }
 
-.destination{
-    height: 240px;
+.destination {
+    min-height: 240px;
     width: 480px;
     border: 1px solid black;
 }
 
-.destination-ordered{
+.destination-ordered {
     background-color: wheat;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: start;
 }
 
-.destination-chaos{
+.destination-chaos {
     border-color: aqua;
+    position: relative;
+    overflow: hidden
 }
