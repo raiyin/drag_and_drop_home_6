@@ -7,26 +7,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Drag and drop hh-homework</title>
         <link rel="icon" type="image/ico" sizes="48x48" href="./favicon.ico">
-        <!-- <link rel="stylesheet" href="styles.css"> -->
         <link rel="stylesheet/less" type="text/css" href="styles/styles.less">
         <script src="https://cdn.jsdelivr.net/npm/less"></script>
     </head>
 
     <body>
+
         <div class="column-wrapper">
             <div class="work-area">
                 <div class="rectangle-creator" id="creator">
                 </div>
                 <div class="destinations-wrapper">
-                    <div class="destination destination-ordered" id="target_ordered">
+                    <div class="destination">
+                        <div class="destination-ordered" id="target_ordered">
+                        </div>
                     </div>
-                    <div class="destination destination-chaos" id="target_chaos">
+                    <div class="destination">
+                        <div class="destination-chaos" id="target_chaos">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <script src="index.js"></script>
+        <script type="module" src="./scripts/index.js"></script>
     </body>
 
 </html>
